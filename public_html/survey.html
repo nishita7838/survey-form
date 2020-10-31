@@ -1,0 +1,226 @@
+<!DOCTYPE ht**1ml>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            background-color: hsl(246,75%,70%);
+             
+             z-index:2;
+        }
+        #title{
+            font-family:'Poppins',sans-serif;
+            color:white;
+            text-align: center;
+            position:absolute;
+            top:40px;
+            left:500px;
+            font-weight: 700;
+            font-size:2em;
+           
+        }
+        #description{
+            font-family:'Poppins';
+            font-style:italic;
+            color:white;
+            position:absolute;
+            top:80px;
+            left:420px;
+            line-height: 2.2em;
+            font-weight:400;
+            font-size:1.4em;
+                    }
+        #survey-form{
+            width:700px;
+            height: 1500px;
+            background-color:hsl(240,75%,15%);
+            position:absolute;
+            top:30%;
+            left:30%;
+            z-index:1;
+            
+            border-radius:5px;
+            font-family: 'Poppins',sans-serif;
+           
+            font-size:0.8em;
+            line-height:2.2em;
+            box-sizing:border-box;
+           
+        }
+        #name{
+           background-color:white;
+           width:650px;
+           height: 45px;
+           border-radius:3.5px;
+           border-color: blue;
+           margin-left: 25px;
+           line-height:1.4em;    
+           
+        }
+        #email{
+            background-color:white;
+            width:650px;
+           height: 45px;
+           border-radius:3.5px;
+           border-color: blue;
+            margin-left: 25px;
+        }
+        #number{
+            background-color:white;
+            width:650px;
+           height: 45px;
+           border-radius:3.5px;
+           border-color: blue;
+            margin-left: 25px;
+            
+        }
+        #dropdown{
+          
+           width:650px;
+           height: 45px;
+           border-radius:3.5px;
+           border-color: blue;
+            margin-left: 25px;
+           
+        }
+        #drop{
+          
+           width:650px;
+           height: 45px;
+           border-radius:3.5px;
+           border-color: blue;
+            margin-left: 25px;
+           
+        }
+        textarea{
+            background-color:white;
+            width:650px;
+            height:150px;
+            font:aerial;
+            border-radius:3.5px;
+           border-color: blue;
+            margin-left: 25px;
+        }
+        #submit{
+           background-color: green;
+           width:650px;
+           height:50px;
+           border-radius:2px;
+          color:white;
+          font-size:25px;
+          font-family: Poppins;
+           margin-left: 25px;
+          
+        }
+        .text{
+            font-family:'Poppins',sans-serif;
+            color: white;
+            text-align: justify;
+          
+            margin-left:25px;
+           font-weight:bolder;
+           font-size:1.6em;
+           line-height: 1.4em;
+           
+           
+        }
+        
+        .image{
+           width:100%;
+           height:2000px;
+               
+            z-index:3;
+            opacity:0.3;
+          
+        }
+    </style>
+  
+    <div id="container">
+     <img class="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg" alt="">
+     <h1 id="title">freeCodeCamp Survey form</h1>
+     <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <div> 
+          <form id="survey-form">
+              <h2 class="text">Name</h2>
+             
+              <input id="name"  type="text" placeholder="Enter your name">
+              <h2 class="text">Email</h2>
+              
+              <input id="email" type="email" placeholder="Enter your Email">
+              <h2 class="text">Age(optional)</h2>
+              <input id="number" min="10" max="80" type="number" placeholder="Age">
+              <h2 class="text">Which option best describes your current role</h2>
+              
+              <label for="dropdown"></label>
+             <select id="dropdown">
+                  <option >Select current role</option>
+                  <option  value="Student">Student</option>
+                  <option  value="Full Time Job">Full Time Job</option>
+                  <option  value="Full Time Learner">Full Time Learner</option>
+                  <option  value="Prefer not to say">Prefer not to say</option>
+                  <option  value="Other">Other</option>
+                  
+                      
+              </select>
+             
+              <h2 class="text">Would you recommend freeCodeCamp to a friend?</h2>
+               
+                  <input id="Definitely" type="radio" name="YesOrNo" value="Definitely">
+                  <label for="Definitely" class="text">Definitely
+               </label>
+                  <br>
+                  
+                  <input id="Maybe" type="radio" name="YesOrNo" value="Maybe">
+                  <label for="Maybe" class="text">Maybe
+                  </label> 
+                  <br>
+                    
+                  <input id="Notsure" type="radio" name="YesOrNo" value="NotSure">
+                <label for="Notsure" class="text">Not Sure
+                    </label>
+              <h2 class="text">What is your favorite feature of freeCodeCamp?</h2>  
+              <label for="drop"></label>
+              <select id="drop">
+                  <option >Select an option</option>
+                  <option  value="Challenges">Challenges</option>
+                  <option  value="Projects">Projects</option>
+                  <option value="Community">Community</option>
+                  <option  value="Open Source">Open Source</option>
+                  
+                          
+              </select>
+              <h2 class="text">What would you like to see improved?(Check all that apply)</h2>
+              <input  id="Front-end" type="checkbox" name="improve" value="Front-end Projects">
+              <label for="Front-end" class="text">Front-end Projects</label>
+              <br>
+              <input id="Back-end" type="checkbox" name="improve" value="Back-end Projects">
+              <label for="Back-end" class="text">Back-end Projects</label><br>
+              <input id="data" type="checkbox" name="improve" value="Data visualisation">
+              <label for="data" class="text">Data Visualization</label><br>
+              <input  id="challenges" type="checkbox" name="improve" value="Challenges">
+              <label for="challenges" class="text">Challenges</label><br>
+              <input  id="open-source" type="checkbox" name="improve" value="Open Source Community">
+              <label for="open-source" class="text">Open Source Community</label><br>
+              <input id="gitter" type="checkbox" name="improve" value="Gitter help rooms">
+              <label for="gitter" class="text">Gitter help rooms</label><br>
+              <input  id="videos" type="checkbox" name="impprove" value="Videos">
+              <label for="videos" class="text">Videos</label><br>
+              <input  id="city" type="checkbox" name="improve" value="City Meetups">
+              <label for="city" class="text">City Meetups</label><br>
+              <input  id="wiki" type="checkbox" name="improve" value="Wiki">
+              <label for="wiki" class="text">Wiki</label><br>
+              <input  id="forum" type="checkbox" name="improve" value="Forum">
+              <label for="forum" class="text">Forum</label><br>
+              <input  id="add" type="checkbox" name="improve" value="Additional Courses">
+              <label for="add" class="text">Additional Courses</label><br>
+              <h2 class="text">Any comments or suggestions</h2>
+              <textarea placeholder="Enter your comments here..."></textarea>
+              <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
+</html>
